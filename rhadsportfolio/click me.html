@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Click & Dark Mode</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="text">Hello! Click the button below.</h1>
+
+  <button id="clickBtn">Click Me!</button>
+  <button id="modeBtn">Toggle Dark Mode</button>
+
+  <script>
+    const text = document.getElementById('text');
+    const clickBtn = document.getElementById('clickBtn');
+    const modeBtn = document.getElementById('modeBtn');
+    const body = document.body;
+
+    clickBtn.addEventListener('click', () => {
+      text.textContent = "You clicked the button!";
+    });
+
+    modeBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rhads Presillas Carbaquil — Portfolio</title>
+
+  
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+ <div class="container nav">
+  <div class="brand">
+    <div class="logo">RC</div>
+    <div>
+      <div class="name">Rhads Presillas Carbaquil</div>
+      <div class="sub" style="color:var(--muted)">3rd Year BSIT • Davao del Sur State College</div>
+    </div>
+  </div>
+
+  <!-- navlinks -->
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#resume" class="nav-link">Resume</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#labs" class="nav-link">Laboratory</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <!-- ADD THIS block for dark mode toggle in navbar -->
+  <div style="margin-left:auto; display:flex; align-items:center; gap:10px;">
+    <strong style="font-size:0.95em;">Dark mode</strong>
+    <div id="themeSwitch" class="switch" tabindex="0" role="switch" aria-checked="false">
+      <div class="knob"></div>
+    </div>
+  </div>
+
+  <!-- hamburger button-->
+  <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+</div>
+
+
+    <!-- darkmode | menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#resume" class="mobile-link">Resume</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#labs" class="mobile-link">Laboratory</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+
+      <div style="margin-top:8px; display:flex; justify-content:space-between; align-items:center;">
+        <strong style="font-size:0.95em;">Dark mode</strong>
+        <div id="themeSwitch" class="switch" tabindex="0" role="switch" aria-checked="false">
+          <div class="knob"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main content -->
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="two-col">
+        <div class="left">
+          <div class="card">
+            <h1>Hi — I'm Rhads</h1>
+            <p>I'm a 3rd Year BSIT student at Davao del Sur State College. I build responsive websites and small web apps.</p>
+
+            <div style="margin-top:8px;">
+              <div style="font-weight:700; margin-bottom:6px;">Skills</div>
+              <span style="background:#eee;padding:6px 10px;border-radius:999px;margin-right:6px;">HTML</span>
+              <span style="background:#eee;padding:6px 10px;border-radius:999px;margin-right:6px;">CSS</span>
+              <span style="background:#eee;padding:6px 10px;border-radius:999px;margin-right:6px;">JavaScript</span>
+              <span style="background:#eee;padding:6px 10px;border-radius:999px;margin-right:6px;">C#</span>
+              <span style="background:#eee;padding:6px 10px;border-radius:999px;margin-right:6px;">Java</span></div>
+       
+            <div style="margin-top:10px;">
+              <a href="#projects" style="display:inline-block; 
+padding:8px 12px; color:#fff; 
+background:linear-gradient(90deg,#4A8FE7,#FF83B2); 
+border-radius:6px; 
+font-weight:800;">View Projects</a>
+              <a href="#contact" style="display:inline-block;
+ margin-left:8px; 
+padding:8px 12px;
+ border-radius:6px; 
+border:1px solid rgba(0,0,0,0.06);
+">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="card" style="text-align:center;">
+            <img src="sumsoph.jpg" alt="Profile photo" class="profile-img">
+            <div style="margin-top:8px; font-weight:700;">Rhads Presillas Carbaquil</div>
+            <div style="color:var(--muted); margin-top:4px;">Aspiring Web Developer</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME / CAREER SUMMARY & SKILLS -->
+    <section id="resume">
+      <h2>Resume / CV</h2>
+
+      <div class="card">
+        <p><strong>Name:</strong> Rhads Presillas Carbaquil</p>
+        <p><strong>Email:</strong> jifors1995@gmail.com</p>
+        <p><strong>Phone:</strong> +63 9384815463</p>
+        <div class="open-row"><button class="open-btn" data-link=" https://www.facebook.com/rhadz.carbaquil.3   ">FACEBOOK</button></div>
+        <div class="open-row"><button class="open-btn" data-link=" https://github.com/   ">GitHub</button></div>
+                              
+
+        <!-- CAREER SUMMARY -->
+        <h3 style="margin-top:10px;">Career Summary</h3>
+        <p style="color:var(--muted);">A motivated and curious 3rd Year BSIT student with hands-on experience building responsive web pages and small interactive applications. Focused on front-end development using HTML, CSS, and JavaScript, and actively learning modern frameworks and best practices.</p>
+
+        <!-- SKILLS animated -->
+        <h3 style="margin-top:10px;">Skills</h3>
+        <div class="skill">
+          <div class="skill-label">HTML <span class="percent" id="p-html">90%</span></div>
+          <div class="progress-outer"><div class="progress-fill" id="html-fill" data-target="90"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-label">CSS <span class="percent" id="p-css">85%</span></div>
+          <div class="progress-outer"><div class="progress-fill" id="css-fill" data-target="85"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-label">JavaScript <span class="percent" id="p-js">80%</span></div>
+          <div class="progress-outer"><div class="progress-fill" id="js-fill" data-target="80"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-label">Java <span class="percent" id="p-java">75%</span></div>
+          <div class="progress-outer"><div class="progress-fill" id="java-fill" data-target="75"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-label">C# <span class="percent" id="p-cs">70%</span></div>
+          <div class="progress-outer"><div class="progress-fill" id="cs-fill" data-target="70"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education-->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>Davao del Sur State College</strong> — BSIT (3rd Year)</p>
+        <p><strong>Hagonoy National High School</strong> — Graduate</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <p><strong>Student Web Developer (Project)</strong></p>
+        <p style="color:var(--muted);">Built responsive pages for student groups and fixed layout issues.</p>
+      </div>
+    </section>
+    
+    <!-- projects-->
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="media-card card">
+        <img src="portfolio.jpg" alt="Project 1">
+        <div class="overlay">
+          <div class="explain">Project 1 — Portfolio site showing projects and skills (HTML/CSS/JS).</div>
+          <div class="open-row"><button class="open-btn" data-link="Carbaquil_rhads1.html">Open</button></div>
+        </div>
+        <div class="media-body">
+          <div class="media-title">Portfolio</div>
+          <div class="media-meta">HTML • CSS • JS</div>
+        </div>
+      </div>
+
+      <div class="media-card card">
+        <img src="sporcle.jpg" alt="Project 2">
+        <div class="overlay">
+          <div class="explain">Project 2 — Quiz app with DOM and scoring logic.</div>
+          <div class="open-row"><button class="open-btn" data-link="https://www.sporcle.com/">Open</button></div>
+        </div>
+        <div class="media-body">
+          <div class="media-title">Quiz App</div>
+          <div class="media-meta">JavaScript</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="labs">
+      <h2>Laboratory Activities (1–5)</h2>
+
+      <div class="media-card card">
+        <img src="hover.jpg" alt="Lab 1">
+        <div class="overlay">
+          <div class="explain">Lab 1 — HOVER.</div>
+          <div class="open-row"><button class="open-btn" data-link="hover.html">Open</button></div>
+        </div>
+        <div class="media-body">
+          <div class="media-title">Laboratory 1</div>
+          <div class="media-meta">Activity 1</div>
+        </div>
+      </div>
+
+      <div class="media-card card">
+        <img src="hover2.jpg" alt="Lab 2">
+        <div class="overlay">
+          <div class="explain">Lab 2 — Hide/Show Hover.</div>
+          <div class="open-row"><button class="open-btn" data-link="hover2.html">Open</button></div>
+        </div>
+        <div class="media-body">
+          <div class="media-title">Laboratory 2</div>
+          <div class="media-meta">Activity 2</div>
+        </div>
+      </div>
+
+      <div class="media-card card">
+        <img src="darkmode.jpg" alt="Lab 3">
+        <div class="overlay">
+          <div class="explain">Lab 3 — Toggle Dark/Light Mode.</div>
+          <div class="open-row"><button class="open-btn" data-link="darkmode.html">Open</button></div>
+        </div>
+        <div class="media-body">
+          <div class="media-title">Laboratory 3</div>
+          <div class="media-meta">Activity 3</div>
+        </div>
+      </div>
+
+      <div class="media-card card">
+        <img src="clickme.jpg" alt="Lab 4">
+        <div class="overlay">
+          <div class="explain">Lab 4 — Click Me Button.</div>
+          <div class="open-row"><button class="open-btn" data-link="click me.html">Open</button></div>
+        </div>
+        <div class="media-body">
+          <div class="media-title">Laboratory 4</div>
+          <div class="media-meta">Activity 4</div>
+        </div>
+      </div>
+
+      <div class="media-card card">
+        <img src="grocery.jpg" alt="Lab 5">
+        <div class="overlay">
+          <div class="explain">Lab 5 — Grocery List.</div>
+          <div class="open-row"><button class="open-btn" data-link="grocery list.html">Open</button></div>
+        </div>
+        <div class="media-body">
+          <div class="media-title">Laboratory 5</div>
+          <div class="media-meta">Activity 5</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label><br>
+          <input id="name" type="text" placeholder="Your full name"><br><br>
+
+          <label for="email">Email</label><br>
+          <input id="email" type="email" placeholder="you@email.com"><br><br>
+
+          <label for="message">Message</label><br>
+          <textarea id="message" placeholder="Write your message..."></textarea><br>
+
+          <div style="margin-top:8px;">
+            <button type="submit" style="background: linear-gradient(90deg,#4A8FE7,#FF83B2); 
+color:#fff; border:0; 
+padding:8px 12px; 
+border-radius:6px; 
+font-weight:800;">Send Message</button>
+            <span id="formMsg" style="margin-left:10px; color:var(--muted);"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div style="color:var(--muted); font-weight:700;">© <span id="year"></span> Rhads Presillas Carbaquil</div>
+    </footer>
+  </main>
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>

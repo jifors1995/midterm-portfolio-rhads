@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: white;
+      color: black;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px;
+      margin: 5px 0;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    li.highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Grocery List</h1>
+  <p>Type an item and click "Add Item". Click an item to highlight it. Double-click to remove it.</p>
+  <input type="text" id="itemInput" placeholder="Enter grocery item">
+  <button id="addBtn">Add Item</button>
+
+  <ul id="groceryList"></ul>
+
+  <script>
+    const addBtn = document.getElementById('addBtn');
+    const input = document.getElementById('itemInput');
+    const list = document.getElementById('groceryList');
+
+    // Add item
+    addBtn.addEventListener('click', () => {
+      const value = input.value.trim();
+      if(value !== "") {
+        const li = document.createElement('li');
+        li.textContent = value;
+
+        // Highlight on click
+        li.addEventListener('click', () => {
+          li.classList.toggle('highlight');
+        });
+
+        // Remove on double click
+        li.addEventListener('dblclick', () => {
+          list.removeChild(li);
+        });
+
+        list.appendChild(li);
+        input.value = "";
+      }
+    });
+  </script>
+
+</body>
+</html>
